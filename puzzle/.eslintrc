@@ -1,0 +1,42 @@
+{
+    "extends": ["airbnb/base","prettier"],
+    "plugins": ["prettier"],
+    "rules":{
+     
+        "no-unused-vars":"off",
+        "no-console":"off",
+        "func-names": "off",
+        "no-continue":"off",
+        "no-var":"off",
+        "no-case-declarations":"off",
+        "object-shorthand":"off",
+        "no-else-return":"off",
+        "consistent-return":"off",
+        "default-case":"off",
+        "no-process-exit":"off",
+        "class-methods-use-this":"off",
+         "no-undef":"off",
+         "prefer-const":"off",
+         "no-plusplus":"off",
+         "max-classes-per-file":"off",
+         "no-shadow":"off",
+         "no-const-assign":"off",
+         "lines-between-class-members":"off",
+         "no-param-reassign":"off",
+         "no-restricted-globals":"off",
+         "no-lonely-if":"off",
+          "no-inner-declarations":"off",
+          "no-loop-func":"off",
+          "one-var":"off",
+          "prefer-template":"off",
+          "no-use-before-define":"off",
+          "operator-assignment":"off",
+          "array-callback-return":"off",
+          "no-unused-expressions":"off",
+          "use-isnan":"off",
+          "prefer-destructuring":"off",
+          "import/prefer-default-export":"off"
+         
+        
+    }
+}

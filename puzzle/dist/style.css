@@ -1,0 +1,454 @@
+body {
+    font-family: 'Diplomata SC', cursive;
+    background-image: url(https://images4.alphacoders.com/100/1005690.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.hide {
+    display: none !important;
+}
+
+.menu-position {
+    width: 400px;
+
+    padding: 15% 0 0 31em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon,
+.level-photo {
+    background: rgb(35, 169, 203);
+    background: linear-gradient(113deg, rgba(35, 169, 203, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    height: 373px;
+    margin: 1rem 0 0 -24rem;
+    position: absolute;
+}
+
+.ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.field {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin: 27px auto;
+}
+
+.house {
+    position: absolute;
+    margin: -28rem 0 0 -27rem;
+    transform: scale(0.08);
+}
+
+.center {
+    width: 1125px;
+    margin: 0 auto;
+    padding: 58px 0 0 0;
+}
+
+* {
+    margin: 0
+}
+
+.menu {
+    position: absolute;
+
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: #060606;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 850px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    background: rgb(20, 45, 204);
+    background: linear-gradient(113deg, rgba(20, 45, 204, 1) 0%, rgba(235, 108, 35, 1) 100%);
+}
+
+p {
+    line-height: 30px;
+}
+
+.solution,
+.solution2,
+#button-start,
+#button-stop {
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    font-family: 'Diplomata SC', cursive;
+    outline: none;
+
+    background: transparent;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 3px solid rgb(12, 11, 12);
+    border-radius: 10px;
+    position: absolute;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.img {
+    position: absolute;
+    width: 223px;
+    height: 220px;
+    transform: scale(0.44);
+}
+
+.restart,
+.continue,
+.addsound,
+.settings,
+.soundon,
+.exit,
+.About,
+.exit2,
+.mission,
+.checker {
+    font-family: 'Dosis', sans-serif;
+
+    border-radius: 5px;
+    background: transparent;
+    color: #BBC0CF;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+.level {
+    text-align: center;
+}
+
+.level-photo,
+.level,
+.addsound,
+.soundon,
+.exit,
+.exit2,
+.About,
+.solution2 {
+    display: none;
+}
+
+#second {
+    font-size: 25px;
+
+    line-height: 42px;
+}
+
+
+.checker {
+    font-size: 27px;
+    margin-bottom: 19px;
+}
+
+.move {
+    color: #fff;
+    font-size: 25px;
+}
+
+.recordlist {
+    border-radius: 7px;
+    width: 320px;
+
+    margin: 2em 0 0 50em;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background: rgb(255, 220, 188);
+    background: linear-gradient(113deg, rgba(255, 220, 188, 1) 0%, rgba(200, 166, 138, 1) 100%);
+}
+
+.place {
+    color: #3A501F;
+    font-size: 17px;
+}
+
+.complete {
+    position: absolute;
+    transition: 1s;
+    opacity: 0;
+    display: none;
+
+    margin: -31rem 0px 0 -21rem;
+}
+
+.result {
+    position: absolute;
+    font-size: 23px;
+    color: #fe7f00;
+    width: 539px;
+    margin: 22rem 0 0 39rem;
+}
+
+.scale {
+
+    transform: scale(0.3);
+
+    position: absolute;
+}
+
+.hover {
+    opacity: 0.7;
+    transition: 0.1s;
+}
+
+.hover:hover {
+    opacity: 1;
+}
+
+#ocScreencapVideo {
+    position: absolute;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+}
+
+.video_button {
+
+    width: 100%;
+    position: absolute;
+    top: 93%;
+    display: flex;
+    justify-content: center;
+    z-index: 113;
+}
+
+p {
+    color: #fff;
+}
+
+.unmute,
+.skip {
+
+
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    outline: none;
+    background: transparent;
+    text-decoration: none;
+    color: #BBC0CF;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+}
+
+@media(max-width: 1280px) {
+    .menu {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .level-photo {
+        transform: scale(0.7);
+    }
+
+    .house {
+        position: absolute;
+        margin: -33rem 0 0 -27rem;
+        transform: scale(0.08);
+    }
+
+    #ocScreencapVideo {
+        position: absolute;
+        z-index: 100;
+        height: auto;
+        width: 100%;
+    }
+
+    .solution,
+    .solution2,
+    #button-start,
+    #button-stop {
+        color: #fff;
+        border: none;
+        font-size: 25px;
+
+        outline: none;
+        background: transparent;
+        border-radius: 5px;
+    }
+
+    .move {
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .center {
+        width: 768px;
+    }
+
+    .wrapper {
+        width: 768px;
+        margin: -16px auto
+    }
+
+    .complete {
+        position: absolute;
+        transition: 1s;
+        /* opacity: 0; */
+        /* display: none; */
+        margin: -32rem 0px 0 -33rem;
+    }
+
+    .recordlist {
+        margin: 2em 0 0 25em;
+    }
+
+    .field {
+        margin: -39px 0 0 50px;
+        transform: scale(.7);
+    }
+
+
+    .menu-position {
+        width: 227px;
+        padding: 17% 0 0px 267px;
+    }
+}
+
+
+
+@media(max-width: 767px) {
+    .menu {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .level-photo {
+        margin: -336px 0 0 -21px;
+        display: none;
+        transform: scale(0.4);
+    }
+
+    #ocScreencapVideo {
+        position: absolute;
+        z-index: 100;
+        margin: -38px 0 0 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .field {
+        transform: scale(0.5);
+        margin: -104px 0 0 -98px;
+    }
+
+    .solution,
+    .solution2,
+    p,
+    #button-start,
+    #button-stop,
+    .move {
+
+        font-size: 18px;
+
+        font-family: 'Dosis', sans-serif;
+        outline: none;
+
+    }
+
+    .icon {
+        height: 150px;
+        display: block;
+        margin: -19rem 0 0px 5.5rem;
+    }
+
+    .menu-position {
+        width: 320px;
+        padding: 155px 0 0px 0px;
+
+    }
+
+    .house {
+        position: absolute;
+        margin: -34rem 0 0 -29rem;
+        transform: scale(0.06);
+    }
+
+    .wrapper {
+        width: 320px;
+        margin: -82px 0 0 0;
+    }
+
+    .center {
+        width: 320px;
+    }
+
+    .restart,
+    .continue,
+    .addsound,
+    .settings,
+    .soundon,
+    .exit,
+    .About,
+    .exit2,
+    .checker {
+
+        font-size: 24px;
+
+    }
+
+    .result {
+        position: absolute;
+        font-size: 56px;
+        color: #fe7f00;
+        width: 934px;
+        margin: 23rem 0 0 28rem;
+    }
+
+    .move {
+        font-weight: 100;
+        line-height: 30px;
+    }
+
+    .complete {
+        position: absolute;
+        transition: 1s;
+        /* opacity: 0; */
+        opacity: 1;
+        z-index: 100;
+        transform: scale(0.34);
+        /* display: none; */
+        margin: -18rem 0px 0 -9rem;
+    }
+
+    .recordlist {
+        width: 106px;
+
+        border-radius: 7px;
+        text-align: center;
+        margin: 2px 0px 0 206px;
+    }
+
+    .place {
+        font-family: 'Dosis', sans-serif;
+    }
+}
